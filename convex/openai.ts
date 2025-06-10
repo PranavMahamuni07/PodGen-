@@ -2,7 +2,7 @@ import { ActionCtx, action, internalMutation, internalQuery } from "./_generated
 import { v } from "convex/values";
 import OpenAI from "openai";
 import { SpeechCreateParams } from "openai/resources/audio/speech.mjs";
-import { getUser, getUserById, isUserSubscribed } from "./users";
+import { getUser, getUserById } from "./users";
 import { api, internal } from "./_generated/api";
 import { rateLimit, formatRetryTime } from "../lib/rateLimits";
 import { UserIdentity } from "convex/server";
@@ -124,7 +124,7 @@ export const getUserSubscription = internalQuery({
     if (!user) throw new Error("User not found");
 
     return {
-      isSubscribed: await isUserSubscribed(ctx),
+      isSubscribed: user.plan === "pro" || user.plan === "enterprise", // ✅ Corrected here
       plan: user.plan,
       freeThumbnails: user.freeThumbnails ?? 0,
     };
