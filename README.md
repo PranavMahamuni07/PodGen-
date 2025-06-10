@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="assets/banner.png" alt="Project Banner" style="border-radius:12px; max-width:100%;">
+
   <br />
 
   <div>
@@ -27,8 +27,7 @@
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
 4. 📸 [Screenshots](#screenshots)
-5. 🤸 [Getting Started](#getting-started)
-6. 🐳 [Docker Instructions](#docker)
+
 
 
 
@@ -97,20 +96,7 @@ and many more, including code architecture and reusability
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
 
-Make sure you have the following installed on your machine:
-
-- [Git](https://git-scm.com/)
-- [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
-
-**Cloning the Repository**
-
-```bash
-git clone https://github.com/deepsingh132/aionair.git
-cd aionair
-```
 
 **Installation**
 
