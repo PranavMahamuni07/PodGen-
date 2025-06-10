@@ -86,10 +86,10 @@ const CreatePodcast = () => {
 
       if (!audioUrl || !imageUrl || !voiceType) {
         toast({
-          title: "Please generate audio and image",
+          title: "Please wait...",
         });
         setIsSubmitting(false);
-        throw new Error("Please generate audio and image");
+        throw new Error("Please Wait...");
       }
 
       const podcast = await createPodcast({
