@@ -1,6 +1,7 @@
 <div align="center">
   <br />
-      <img src="assets/banner.png" alt="Project Banner" style="border-radius:12px; max-width:100%;">
+      <img src="assets/banner.png" alt="Project Banner" style="border-radius:12px; width:80%; max-width:100%; height:auto;">
+
   <br />
 
   <div>
