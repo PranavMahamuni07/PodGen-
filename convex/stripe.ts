@@ -28,7 +28,7 @@ export const pay = action({
       throw new Error("You must provide a plan to subscribe to!");
     }
 
-    const domain = process.env.HOSTING_URL ?? "http://localhost:3000";
+    const domain = process.env.HOSTING_URL ?? "https://pod-gen-seven.vercel.app";
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
       apiVersion: "2024-04-10",
     });
@@ -137,7 +137,7 @@ export const createCustomerPortal = action({
       customer: customerId!,
       return_url:
         process.env.HOSTING_URL ??
-        `http://localhost:3000/plans?session_id={BILLING_PORTAL_SESSION_ID}`,
+        `https://pod-gen-seven.vercel.app/plans?session_id={BILLING_PORTAL_SESSION_ID}`,
     });
 
     return session.url;
