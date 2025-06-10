@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-
+      <img src="assets/banner.png" alt="Project Banner" style="border-radius:12px; max-width:100%;">
   <br />
 
   <div>
